@@ -1,0 +1,27 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "Node application with typescript ",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "start:dev": "nodemon --exec ts-node -r tsconfig-paths/register app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/body-parser": "^1.19.6",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.0",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "dependencies": {
+    "body-parser": "^2.3.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
